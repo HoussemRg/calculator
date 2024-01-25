@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calculator.css">
+    <title>calculator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="screen">
+            <p class="text">0</p>
+        </div>
+        <div class="buttons">
+            <div class="first">
+                <div class="numbers"><button class="bouton btn-js-ac" onclick="clearAll();">AC</button></div>
+                <div class="numbers"><button class="bouton btn-js-mc" onclick="deleteOperation();">Del</button></div>
+                <div class="numbers"><button class="bouton btn-js-%" onclick="printValueOfButton('%');">%</button></div>
+                <div class="numbers"><button class="bouton btn-js-/" onclick="printValueOfButton('/');">/</button></div>
+                <div class="numbers"><button class="bouton btn-js-7" onclick="printValueOfButton('7');">7</button></div>
+                <div class="numbers"><button class="bouton btn-js-8" onclick="printValueOfButton('8');">8</button></div>
+                <div class="numbers"><button class="bouton btn-js-9" onclick="printValueOfButton('9');">9</button></div>
+                <div class="numbers"><button class="bouton btn-js-*" onclick="printValueOfButton('*');">*</button></div>
+                <div class="numbers"><button class="bouton btn-js-4" onclick="printValueOfButton('4');">4</button></div>
+                <div class="numbers"><button class="bouton btn-js-5" onclick="printValueOfButton('5');">5</button></div>
+                <div class="numbers"><button class="bouton btn-js-6" onclick="printValueOfButton('6');">6</button></div>
+                <div class="numbers"><button class="bouton btn-js--" onclick="printValueOfButton('-');">-</button></div>
+                <div class="numbers"><button class="bouton btn-js-1" onclick="printValueOfButton('1');">1</button></div>
+                <div class="numbers"><button class="bouton btn-js-2" onclick="printValueOfButton('2');">2</button></div>
+                <div class="numbers"><button class="bouton btn-js-3" onclick="printValueOfButton('3');">3</button></div>
+                <div class="numbers"><button class="bouton btn-js-+" onclick="printValueOfButton('+');">+</button></div>
+            </div>
+            <div class="second">
+                <div class="double-number"><button class="bouton button-0 btn-js-0" onclick="
+                    if(document.querySelector('.text').innerHTML!='0'){
+                        printValueOfButton('0');
+                    }
+                    ">0</button></div>
+                <div class="numbers"><button class="bouton btn-js-." onclick="printValueOfButton('.');">.</button></div>
+                <div class="numbers"><button class="bouton btn-js-=" onclick="calculate();">=</button></div>
+            </div>
+        </div>
+    </div>
+   <script src="calculator.js"></script> 
+</body>
+</html>

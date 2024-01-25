@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Open+Sans&family=Raleway:ital@1&family=Roboto:wght@500&family=Tajawal:wght@200;400&display=swap');
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #eee;
+    font-family: 'Tajawal','Raleway',sans-serif;
+}
+.container{
+    width: 350px;
+    height: 450px;
+    margin: 50px auto;
+    background-color: #eee;
+    padding-top: 20px;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+    border: 1px solid #eee;
+    
+}
+
+.screen{
+    background-color: #eee;
+    margin:10px;
+    height: 70px;
+    box-shadow: -1px -1px 2px rgba(0,0,0,0.5);
+    border: 2px solid #eee;
+    border-right-color: white;
+    border-bottom-color: white;
+    position:relative;
+    overflow: hidden;
+
+}
+.text{
+    position:absolute;
+    right:0;
+    bottom:0;
+    font-size: 25px;
+}
+
+.buttons{
+    background-color: #eee;
+    margin:10px;
+    height: 300px;
+   
+}
+.numbers{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+    
+}
+.first{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 5px;
+    row-gap: 5px;
+    margin-top:5px;
+    margin-bottom: 5px;
+}
+.second{
+    display:grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    column-gap: 5px;
+    row-gap: 5px;
+}
+.double-number{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.bouton{
+    height: 40px;
+    width: 40px;
+    padding:10px;
+    border: 1px solid rgb(196, 187, 187);
+    border-radius: 20px;
+    box-shadow: 2px 2px 3px rgba(0,0,0,0.5);
+    font-size: 15px;
+    font-family: 'Roboto',sans-serif;
+    cursor: pointer;
+    
+}
+.button-0{
+    height:40px;
+    width: 125px;
+    border-radius: 5px;
+
+}
